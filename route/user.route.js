@@ -11,9 +11,12 @@ router.get("/json",(req,res)=>{
     })
 });
 
-// router.get("/login",(req,res)=>{
-//     res.sendFile(__dirname + "/login.html");
-// })
+router.get("/login",(req,res)=>{
+    res.cookie(
+        "name","bulbul"
+    );
+    res.end()
+})
 
 
 module.exports = router;
