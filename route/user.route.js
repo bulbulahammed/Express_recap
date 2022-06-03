@@ -1,10 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const path = require('path');
 
-
-router.get("/login",(req,res)=>{
-    res.send('Your are in <h1>Login</h1> Route');
-});
 
 router.get("/json",(req,res)=>{
     res.status(200).json({
@@ -14,9 +11,9 @@ router.get("/json",(req,res)=>{
     })
 });
 
-// Example of Redirect
-router.get("/reg",(req,res)=>{
-    res.redirect("/api/user/login");
-})
+// router.get("/login",(req,res)=>{
+//     res.sendFile(__dirname + "/login.html");
+// })
+
 
 module.exports = router;

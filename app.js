@@ -10,7 +10,6 @@ app.get('/',(req,res)=>{
     res.send('You are at home route with get method');
 });
 
-
 app.use((req,res)=>{
     res.send("<h1>404!! Your Requested URL is not found.<h1/>");
 })
